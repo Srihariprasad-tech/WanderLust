@@ -1,0 +1,228 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.f-info {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    background-color: #ebebeb;
+    height: 8rem;
+}
+
+.f-info-links {
+    width: 100%;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.f-info-socials i {
+    margin-right: 1rem;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* =========================
+   LISTING CARDS
+========================= */
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.listing-link {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.card-img-top {
+    width: 100% !important;
+    height: 20rem;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+}
+
+.card-body {
+    padding: 0 !important;
+    margin-top: 0.5rem;
+}
+
+.card-text {
+    font-weight: 400;
+    color: #222222;
+}
+
+/* =========================
+   CARD HOVER EFFECT
+========================= */
+
+.card-img-overlay {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* =========================
+   SHOW PAGE
+========================= */
+
+.show-img {
+    width: 70%;
+    max-width: 700px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.show-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   FILTERS SECTION
+========================= */
+
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.filter {
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.filter i {
+    font-size: 1.3rem;
+    display: block;
+}
+
+.filter p {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    #filters {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .filter i {
+        font-size: 1.1rem;
+    }
+
+    .filter p {
+        font-size: 0.7rem;
+    }
+
+    .card-img-top {
+        height: 16rem;
+    }
+
+    .show-img {
+        width: 95%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .navbar {
+        height: auto;
+    }
+
+    .card-img-top {
+        height: 14rem;
+    }
+
+    .show-img {
+        height: 250px;
+    }
+
+    #filters {
+        justify-content: center;
+    }
+}
