@@ -8,7 +8,6 @@ Built using Node.js, Express.js, MongoDB, EJS, Passport.js, and Cloudinary.
 
 ## 🚀 Live Demo
 
-🌐 Live Website: https://wanderlust-project-2z9q.onrender.com
 📂 GitHub Repository: https://github.com/Srihariprasad-tech/WanderLust
 
 ---
