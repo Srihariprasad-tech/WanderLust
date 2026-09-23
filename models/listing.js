@@ -22,17 +22,6 @@ ref:"Review",
     }
 });
 
-//post middleware//
-
-//Delete Listing
-
-//↓
-
-//MongoDB deletes listing
-
-//↓
-
-//AFTER deletion
 
 
 //Run this function
